@@ -59,6 +59,7 @@ fn download_game(msg: &ClientMessage) -> Result<Game, Box<dyn std::error::Error>
 }
 
 
+
 #[derive(Serialize)]
 pub struct SlpData {
     #[serde(flatten)]
@@ -72,6 +73,7 @@ impl SlpData {
         }
     }
 }
+
 
 #[derive(Deserialize)]
 pub struct ClientMessage {

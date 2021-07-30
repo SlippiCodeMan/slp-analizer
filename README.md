@@ -2,7 +2,7 @@
 
 ## Api
 
-> The port used for websocket is **9002**.
+> The port used for websocket is **9003**.
 
 ### Client messages
 

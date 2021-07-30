@@ -21,7 +21,7 @@ async fn main() -> std::io::Result<()> {
             .wrap(middleware::Logger::default())
             .service(web::resource("/").route(web::get().to(ws_index)))
     })
-        .bind(("0.0.0.0", 9002))?
+        .bind(("0.0.0.0", 9003))?
         .run()
         .await
 }
