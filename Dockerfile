@@ -25,4 +25,4 @@ RUN cargo build --release
 FROM rust as runtime
 WORKDIR slp-analyzer
 COPY --from=builder /slp-analyzer/target/release/slp-analyzer /usr/local/bin
-ENTRYPOINT ["./usr/local/bin/slp-analyzer"]
+ENTRYPOINT ["/usr/local/bin/slp-analyzer"]
