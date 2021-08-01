@@ -4,6 +4,6 @@ COPY . .
 RUN cargo build --release
 
 FROM rust as runtime
-WORKDIR app
+WORKDIR slp-analizer
 COPY --from=builder /app/target/release/slp-analizer /usr/local/bin
 ENTRYPOINT ["./usr/local/bin/slp-analizer"]
