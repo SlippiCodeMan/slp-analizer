@@ -18,12 +18,12 @@ Get the analysis of a slippi file:
 
 #### Success messages
 
-Everything went well:
+Everything went well (`data` is filled with slippi data):
 ```json
 {
   "t": "done",
   "slp_url": "https://slp-url.com",
-  "data": { /* something */ }
+  "data": {}
 }
 ```
 
